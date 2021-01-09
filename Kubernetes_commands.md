@@ -20,6 +20,10 @@ Deploying Nginx container on Kubernetes
 4.To know the detail information of pods
 
  -> kubectl describe pod <podname>
+  
+5.to delete perticular pod and then it automatically created
+
+ -> kubectl delete pod <podname>
  
  
  
