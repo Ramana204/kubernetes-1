@@ -17,6 +17,10 @@ Deploying Nginx container on Kubernetes
 
  -> kops delete cluster dev.k8s.valaxy.in --yes
  
+4.To know the detail information of pods
+
+ -> kubectl describe pod <podname>
+ 
  
  
  
