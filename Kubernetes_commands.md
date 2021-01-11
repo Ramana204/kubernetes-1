@@ -13,15 +13,12 @@ Deploying Nginx container on Kubernetes
  -> kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer
  -> kubectl get services -o wide
  
-3.To delete cluster
-
- -> kops delete cluster dev.k8s.valaxy.in --yes
  
-4.To know the detail information of pods
+3.To know the detail information of pods
 
  -> kubectl describe pod <podname>
   
-5.to delete perticular pod and then it automatically created
+4.to delete perticular pod and then it automatically created
 
  -> kubectl delete pod <podname>
  
