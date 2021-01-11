@@ -15,7 +15,7 @@ spec:
       image: kammana/nodeapp:v1
       ports:
         - containerPort: 8080
-$ kubectl create -f https://raw.githubusercontent.com/javahometech/kubernetes/master/pods/pods.yml
+$ kubectl create -f pod.yml
 Command to get all pods
 $ kubectl get pods
 Command to describe pod details
