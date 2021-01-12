@@ -1,0 +1,54 @@
+vi service.yml
+--------------
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  labels:
+    app: nginx-app
+spec:
+  selector:
+    app: nginx-app
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30000
+
+
+--> kubectl create -f deploy.yml
+
+--> kubectl create -f service.yml
+
+--> kubectl get svc
+
+--> kubectl get pods
+
+--> kubectl delete -f service.yml
+
+--> kubectl delete -f deploy.yml
+
+
+vi svcload.yml
+--------------
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  labels:
+    app: nginx-app
+spec:
+  selector:
+    app: nginx-app
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30000
+
+
+--> kubectl create -f deploy.yml
+
+-->  kubectl create -f svcload.yml
+
+-->  
